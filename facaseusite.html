@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conect Sobre nós</title>
+    <link rel="stylesheet" type="text/css" href="ESTILO.css">
+</head>
+<link rel="shortcut icon" href="logo.png" type="imagem" />
+<body>
+
+<nav role="navdomenu" id="navdomenu">
+    
+    <div id="divdomenu">
+
+      <input type="checkbox" />
+      
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      
+
+      <ul id="menu">
+        <a href="home1.html"><li><img id="logo" src="logo.png"></li></a>
+        <a href="home1.html"><li>Home</li></a>
+        <a href="sobrenos.html"><li>Sobre nós</li></a>
+        <a href="facaseusite.html"><li><strong style="color: salmon;">Faça seu site</strong></li></a>
+        <a href="home1en.html"><img style=" padding-bottom: -1vw; border: rgb(255, 255, 255) 0.5vw; border-radius: 50%; width: 3vw; height: 3vw; right: 0;" src="en.png"></a>
+    </ul>
+    </div>
+
+
+
+
+  </nav>
+  <div class="slide"></div>
+
+
+  <div class="todo" style="margin-bottom: 20vw;">
+    <p id="titulo"><strong id="titulo">Nossos serviços</strong></p>
+    
+    <p id="texto" >❶Construção de sites<br><br>❷Interfaces para pagamento online com cartão<br><br>❸Reformar sites<br><br>❹Construção de API's<br><br>❺Impulsionamento de sites<br></❶Construção>
+    <p id="titulo"><strong id="titulo">Faça um orçamento sem compromisso</strong></p>
+
+    
+    <img src="g3.gif">
+    <p id="texto" ><strong>Construção de sites</p></strong>
+        <input class="consrefo" type="number" id="construcao" placeholder="indique o número de janelas">
+        <input  class="consrefo"  type="button" value="Enviar" onclick='click1()'>
+    <div id="construcao1" style="color: rgb(0, 0, 0);" >Aproximadamente: R$00,00</div>
+    <div id = "contato">
+    <p id="texto" ><strong>Reformar sites</p></strong>
+    <input class="consrefo" type="number" id="reconstrucao" placeholder="indique o número de janelas">
+    <input class="consrefo" type="button" value="Enviar" onclick='click2()'>
+    <div id="reformacao1" style=" color: rgb(0, 0, 0);" >Aproximadamente: R$00,00</div>
+
+    <script>
+        function click1(){
+            var x= window.document.getElementById('construcao')
+            var x1 = Number(x.value)
+            var y= x1 * 160
+            var texto = window.document.getElementById('construcao1')
+            texto.innerHTML = `Aproximadamente: R$ ${y},00R$`
+        }
+        function click2(){
+            var x2= window.document.getElementById('reconstrucao')
+            var x22 = Number(x2.value)
+            var y2= x22 * 40
+            var texto2 = window.document.getElementById('reformacao1')
+            texto2.innerHTML = `Aproximadamente: R$ ${y2},00 `
+        }
+
+
+
+    </script>
+
+    
+
+
+
+    <section class="content">
+        <div class="contato">
+            <p id="titulo"><strong>Entre em contato</strong></p>
+            <form class="form" method="POST" action="email.php">
+                <input class="field" name="nome" placeholder="Nome">
+                <input class='field' name="email" placeholder="E-mail">
+                <textarea class="field" name="message" placeholder="Digite sua menssagem aqui"></textarea>
+                <input class="field" type="submit" value="Enviar">
+            </form>
+
+            </section>
+
+
+        </div>
+        </div>
+
+  </div>
+  <ul id="rodape" style="margin-bottom: 0px;">
+    <li>
+        <strong id="footerletrastitulo">Páginas</strong><br><br>
+            <a href="home1.html"><img id="logo" src="logo.png"></a><br>
+            <a href="home1.html">Home</a><br>
+            <a href="sobrenos.html">Sobre nós</a><br>
+            <a href="facaseusite.html"><strong style="color: salmon;">Faça seu site</strong></a><br>
+    </li>
+
+    <li>
+        <strong id="footerletrastitulo">Contato</strong><br><br>
+        <a href="home1en.html"><img id="logo" src="logo.png"></a><br>
+        <a href="facaseusite.html#contato">Gmail: conect@conecte.site</a><br>
+        <a href="http://www.grupoteleport.com.br/" target="_blank">Grupo Teleport</a><br>
+        <a href="http://www.rpmengenharia.eng.br" target="_blank">RPM engenharia</a>
+    </li>
+
+  </ul>
+</body>
+<a href="#navdomenu"><img style="position: fixed; bottom: 0; right: 0; width: 70px; height: 70px;;" src="cursor subida.png"></a>
+</html>
