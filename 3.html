@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>teste</title>
+</head>
+<body>
+    <div id="fbjk">ddddddddddddddddddddddddddddddd</div>
+    <section style="min-height: 75vh;">
+        <a href="#sessao1">sessao1</a>
+        <a href="#sessao2">sessao2</a>
+        <a href="#sessao3">sessao3</a>
+        <a href="#sessao4">sessao4</a>
+    </section>
+    <div id="sessao1" style="min-height: 75vh; background-color: aqua;"><h1>sessao1</h1></div>
+    <section id="sessao2" style="min-height: 75vh; background-color: burlywood;"><h1>sessao2</h1></section>
+    <section id="sessao3" style="min-height: 75vh; background-color: darkgray;"><h1>sessao3</h1></section>
+    <section id="sessao4" style="min-height: 75vh; background-color: goldenrod;"><h1>sessao4</h1></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <div style="font-size: 10vw;" id="fbjk">ddddddddddddddddddddddddddddddd</div>
+    <script>
+        $(window).scroll(function (event) {
+        var croll = $(window).scrollTop();
+        // Do something
+        var k = window.document.getElementById("fbjk")
+        var scroll = Number(croll.value)
+        k.innerHTML = `${croll}`
+        if ( scroll = `0` ){
+        var x = window.document.getElementById('sessao1')
+        x.style.backgroundColor = 'red'
+        }
+});
+    </script>
+<!--    <script>
+var $target = $('.anime'),
+animationClass = 'anime-start';
+
+function animeScroll(){
+    var documentTop = $(document).scrollTop()
+    console.log(documentTop)
+    console.log(documentTop + 9)
+}
+
+
+
+
+    while (1 == 1){
+        animeScroll()
+    }
+    </script> -->
+</body>
+</html>
