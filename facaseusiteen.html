@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conect Make you Website</title>
+    <link rel="stylesheet" type="text/css" href="ESTILO.css">
+
+</head>
+<link rel="shortcut icon" href="logo.png" type="imagem" />
+<body>
+
+<nav role="navdomenu" id="navdomenu">
+    
+    <div id="divdomenu">
+
+      <input type="checkbox" />
+      
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      
+
+      <ul id="menu">
+        <a href="home1en.html"><li><img id="logo" src="logo.png"></li></a>
+        <a href="home1en.html"><li>Home</li></a>
+        <a href="sobrenosen.html"><li>About us</li></a>
+        <a href="facaseusiteen.html"><li><strong style="color: salmon;">Your website</strong></li></a>
+        <a href="home1.html"><img style=" padding-bottom: -1vw; border: rgb(255, 255, 255) 0.5vw; border-radius: 50%; width: 3vw; height: 3vw; right: 0;" src="br.png"></a>
+    </ul>
+    </div>
+
+
+
+
+  </nav>
+  <div class="slide"></div>
+
+
+  <div class="todo" style="margin-bottom: 20vw;">
+    <p id="titulo"><strong id="titulo">Our services
+    <p id="texto" >❶Website building<br><br>❷Interfaces for online card payment<br><br>❸Reform website<br><br>❹Building de API's<br><br>❺Boosting sites
+    <p id="titulo"><strong id="titulo">Make a free quote</strong></p>
+
+    
+    <img src="g3.gif">
+    <p id="texto" ><strong>Website building</p></strong>
+        <input style=" text-align: center;font-size: 2vw; width: 100%; color: white; background-color: black;height: 3vw;" type="number" id="construcao" placeholder="Indicate the number of windows">
+        <input style="font-size: 2vw; width: 100%; color: white; background-color: black;height: 3vw;" type="button" value="Send" onclick='click1()'>
+    <div id="construcao1" style=" font-size: 2vw; color: rgb(0, 0, 0);" >About: US$00,00</div>
+    <div id="contato">
+    <p id="texto" ><strong>Reform websites</p></strong>
+    <input style=" text-align: center; font-size: 2vw; width: 100%; color: white; background-color: black;height: 3vw;" type="number" id="reconstrucao" placeholder="Indicate the number of windows">
+    <input style="font-size: 2vw; width: 100%; color: white; background-color: black;height: 3vw;" type="button" value="Send" onclick='click2()'>
+    <div id="reformacao1" style=" font-size: 2vw; color: rgb(0, 0, 0);" >About: US$00,00</div>
+
+    <script>
+        function click1(){
+            var x= window.document.getElementById('construcao')
+            var x1 = Number(x.value)
+            var y1= x1 * 160
+            var y = y1 / 5
+            var texto = window.document.getElementById('construcao1')
+            texto.innerHTML = `About: US$ ${y}`
+        }
+        function click2(){
+            var x2= window.document.getElementById('reconstrucao')
+            var x22 = Number(x2.value)
+            var y3= x22 * 40
+            var y2 = y3 / 5
+            var texto2 = window.document.getElementById('reformacao1')
+            texto2.innerHTML = `About: US$ ${y2} `
+        }
+        
+
+
+
+    </script>
+
+    
+
+
+    
+    <section class="content">
+        <div class="contato">
+            <p style="
+            width: 50%;
+            color: black;
+            font-size: 2.5vw;
+            padding-left: 1vw;
+            margin-left: 44%;
+            background-color: rgb(175, 175, 175);"><strong>Contact</strong></p>
+            <form class="form" method="POST" action="email.php">
+                <input class="field" name="nome" placeholder="Name">
+                <input class='field' name="email" placeholder="E-mail">
+                <textarea class="field" name="message" placeholder="Enter your message here"></textarea>
+                <input class="field" type="submit" value="Send">
+            </form>
+
+            </section>
+        </div>
+
+
+            
+        </div>
+
+  </div>
+  <ul id="rodape" style="margin-bottom: 0px;">
+    <li>
+        <strong id="footerletrastitulo">Pages</strong><br><br>
+            <a href="home1en.html"><img id="logo" src="logo.png"></a><br>
+            <a href="home1en.html">Home</a><br>
+            <a href="sobrenosen.html">About us</a><br>
+            <a href="facaseusiteen.html"><strong style="color: salmon;">Your website</strong></a><br>
+    </li>
+
+    <li>
+        <strong id="footerletrastitulo">Contact</strong><br><br>
+        <a href="home1en.html"><img id="logo" src="logo.png"></a><br>
+        <a href="facaseusiteen.html#contato">Gmail: conect@conecte.site</a><br>
+        <a href="http://www.grupoteleport.com.br/" target="_blank">Grupo Teleport</a><br>
+        <a href="http://rpmengenharia.eng.br/site/" target="_blank">RPM engenharia</a>
+</li>
+
+  </ul>
+  <a href="#navdomenu"><img style="position: fixed; bottom: 0; right: 0; width: 70px; height: 70px;;" src="cursor subida.png"></a></body>
+</html>
